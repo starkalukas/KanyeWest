@@ -1,0 +1,335 @@
+body{
+    background-image: url(./../images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: black;
+    user-select: none;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(460%, -100%) rotate(180deg);
+  -ms-transform: translate(460%, -100%) rotate(180deg);
+  transform: translate(460%, -100%) rotate(180deg);
+  -webkit-transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 117%;
+  padding: 5%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 2% 5%;
+  text-transform: uppercase;
+  color: #fff;
+  border: 20% solid #fff;
+  margin: 20% 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  transform: translateY(-200%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+#box1{
+    margin-top: 12%;
+    margin-left: 5%;
+}
+#box2{
+    margin-top: 12%;
+    margin-left: 24%;
+}
+#box3{
+    margin-top: 12%;
+    margin-left: 43%;
+}
+#box4{
+    margin-top: 12%;
+    margin-left: 62%;
+    margin-right: 10%;
+}
+#box5{
+    margin-top: 12%;
+    margin-left: 81%;
+    margin-right: 5%;
+}.hovereffect2 {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect2 .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.hovereffect2 img {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect2:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.7);
+  -webkit-filter: brightness(0.7);
+}
+
+.hovereffect2 h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-size: 117%;
+  padding: 10%;
+  width: 100%;
+}
+
+.hovereffect2:hover h2 {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+  transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
+}
+
+.hovereffect2 a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7% 14%;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 5% 0 0 0;
+  background-color: transparent;
+}
+
+.hovereffect2 a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect2 .rotate {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.hovereffect2 hr {
+  width: 50%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.hovereffect2  hr:nth-child(2) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(0,0,1);
+}
+
+.hovereffect2  hr:nth-child(3) {
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(0,0,1);
+  transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(0,0,1);
+}
+
+.hovereffect2 h2, .hovereffect2 hr {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0%;
+}
+
+.group1, .group2 {
+  left: 50%;
+  position: absolute;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  background-color: transparent;
+  margin: 0%;
+  padding: 0%;
+}
+
+.group1 {
+  top: 40%;
+}
+
+.group2 {
+  top: 60%;
+}
+
+.hovereffect2 p {
+  width: 30%;
+  text-transform: none;
+  font-size: 115%;
+  line-height: 2;
+}
+
+.hovereffect2 p a {
+  color: #fff;
+}
+
+.hovereffect2 p a:hover,
+.hovereffect2 p a:focus {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.hovereffect2  a i {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  padding: 0.5vw;
+  font-size: 1vw;
+}
+
+.group1 a:first-child i {
+  -webkit-transform: translate3d(-60%,-60%,0) rotate(45deg) scale(2);
+  transform: translate3d(-60%,-60%,0) rotate(45deg) scale(2);
+}
+
+.group1 a:nth-child(2) i {
+  -webkit-transform: translate3d(60%,-60%,0) rotate(45deg) scale(2);
+  transform: translate3d(60%,-60%,0)  rotate(45deg) scale(2);
+}
+
+.group2 a:first-child i {
+  -webkit-transform: translate3d(-60%,60%,0) rotate(45deg) scale(2);
+  transform: translate3d(-60%,60%,0) rotate(45deg) scale(2);
+}
+
+.group2 a:nth-child(2) i {
+  -webkit-transform: translate3d(60%,60%,0)  rotate(45deg) scale(2);
+  transform: translate3d(60%,60%,0)  rotate(45deg) scale(2);
+}
+
+.hovereffect2:hover hr:nth-child(2) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate(0deg) scale3d(1,1,1);
+}
+
+.hovereffect2:hover hr:nth-child(3) {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(1,1,1);
+  transform: translate3d(-50%,-50%,0) rotate(90deg) scale3d(1,1,1);
+}
+
+.hovereffect2:hover .group1 i:empty, .hovereffect2:hover .group2 i:empty {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0) rotate(45deg) scale(1);
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.col-lg-3{
+    height: auto;
+    width: 15%;
+    position: absolute;
+    float: left;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+i{
+    color: white;
+}
+h2{
+    font-family: 'Audiowide', cursive;
+}
+a{
+    font-family: 'Electrolize', sans-serif;
+}

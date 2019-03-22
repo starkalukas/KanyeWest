@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>I N T R O</title>
+    <meta name="description" content="THIS IS THE SITE FOR THE INTRO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lukas Starka">
+    <link rel="stylesheet" type="text/css" href="./../css/style_index.css">
+    <link rel="icon" href="./../images/icon_1.png" type="image/gif" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+</head>
+<body onload="loader()">
+    <div id="loading">
+    </div>
+
+    <div class="flex2">
+        <div class="info" id="info1">
+            <a class="disable" id="43337121" href="http://www.uhr-homepage.de"></a><script src="https://www.uhr-homepage.de/data.php?i=43337121&h=46&w=135" ></script>
+        </div>
+        <div class="info" id="info2">
+            <p>KLICK ON "KANYE WEST" TO GET STARTED</p>
+        </div>
+    </div>
+    <nav>
+        <div class="flex">
+            <div class="information" id="information1">
+                <a id="ueberschrift" href="home.html">Kanye West</a>
+                <p><span class="tag">Kanye Omari West</span> is an <span>American rapper, singer, songwriter, record producer, entrepreneur</span> and <span>fashion designer.</span><br> He is one of the <span>most popular rappers</span> in the world,<br> and one of the <span>world's best-selling music artists.</span> <br>West's contributions to music and fashion,along with his <span>publicized personal life</span> made him a global figure in popular culture.</p>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <audio autoplay>
+        <source src="./../vids/Intro_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="preload">
+        <video autoplay muted>
+            <source src="./../vids/intro_2.mp4">
+            This video can't be played
+        </video>
+    </div>
+    </main>
+    <script>
+        function loader(){
+            loader = setTimeout(showpage, 1000)}
+        function showpage(){
+            document.getElementById("loading").style.display = "none"}
+        
+    </script>
+</body>
+</html>

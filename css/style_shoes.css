@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    background-color: gray;
+    user-select: none;
+}
+#fullpage
+{
+    height: 100vh;
+    overflow: hidden;
+    
+}
+#fullpage section
+{
+    height: 100vh;   
+}
+#fullpage section h1
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    
+}
+#fullpage section:nth-child(1), #fullpage section:nth-child(2), #fullpage section:nth-child(3), #fullpage section:nth-child(4), #fullpage section:nth-child(5), #fullpage section:nth-child(6), #fullpage section:nth-child(7), #fullpage section:nth-child(8), #fullpage section:nth-child(9){
+    background: white;
+}
+.circle
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 5%;
+    height: 10%;
+    text-align: center;
+    line-height: 110px;
+    font-size: 4vw;
+    overflow: hidden;
+}
+.circle .fa
+{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(-50px);
+        text-shadow: 0 50px 0 white;
+    }
+    20%
+    {
+        transform: translateY(0px);
+        text-shadow: 0 10px 0 white;
+    }
+    40%
+    {
+        transform: translateY(0px);
+        text-shadow: 0 -10px 0 white;
+    }
+    60%
+    {
+        transform: translateY(0px);
+        text-shadow: 0 0px 0 white;
+    }
+    100%
+    {
+        transform: translateY(100px);
+        text-shadow: 0 -50px 0 white;
+    }
+}
+.link{
+    position: relative;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+video{
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    
+}
+img{
+    height: 30vh;
+    width: 60vw;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+}
+.circle:hover{
+    cursor: grab;
+}
+.navigation2{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10vw;
+    position: relative;
+    font-size: 22px;
+    padding: 8px 16px;
+    top: 40%;
+}
+.link2, .current_site{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 2px;
+    margin-top: 5%;
+    transition: padding-left 2s linear, color 2s ease, background-color 2s ease-in;
+    font-family: 'Schoolbell', cursive;
+}
+.current_site{
+    border-left-color: #CFCDBD;
+    border-left-style: solid;
+    border-left-width: 2px;
+}
+.link2:hover{
+    background-color: black;
+    color: white;
+    padding-left: 60%;
+}
+.current_site:hover{
+    background-color: #CFCDBD;
+    color: white;
+    padding-left: 60%;
+}
+.wrapper {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow {
+  overflow: hidden;
+  height: 520px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.yeezy750, .yeezy350, .yeezy350Cleat, .yeezy350v2, .yeezy700, .yeezy950, .yeezy500, .yeezypower {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.yeezy750:nth-child(1) {
+  background-image: url("./../images/yeezy750_1.jpg");
+}
+
+.yeezy750:nth-child(2) {
+    background-image: url("./../images/yeezy750_2.jpg");
+}
+
+.yeezy750:nth-child(3) {
+    background-image: url("./../images/yeezy750_3.jpg");
+}
+
+.yeezy750:nth-child(4) {
+    background-image: url("./../images/yeezy750_4.jpg");
+}
+.yeezy350:nth-child(1) {
+  background-image: url("./../images/yeezy350_1.jpg");
+}
+
+.yeezy350:nth-child(2) {
+    background-image: url("./../images/yeezy350_2.jpg");
+}
+
+.yeezy350:nth-child(3) {
+    background-image: url("./../images/yeezy350_3.jpg");
+}
+
+.yeezy350:nth-child(4) {
+    background-image: url("./../images/yeezy350_4.jpg");
+}
+
+.yeezy350Cleat:nth-child(1) {
+  background-image: url("./../images/yeezy350Cleat_1.jpg");
+}
+
+.yeezy350Cleat:nth-child(2) {
+    background-image: url("./../images/yeezy350Cleat_2.jpg");
+}
+
+.yeezy350Cleat:nth-child(3) {
+    background-image: url("./../images/yeezy350Cleat_3.jpg");
+}
+
+.yeezy350Cleat:nth-child(4) {
+    background-image: url("./../images/yeezy350Cleat_4.jpg");
+}
+.yeezy350v2:nth-child(1) {
+  background-image: url("./../images/yeezy350V2_1.jpg");
+}
+
+.yeezy350v2:nth-child(2) {
+    background-image: url("./../images/yeezy350V2_2.jpg");
+}
+
+.yeezy350v2:nth-child(3) {
+    background-image: url("./../images/yeezy350V2_3.jpg");
+}
+
+.yeezy350v2:nth-child(4) {
+    background-image: url("./../images/yeezy350V2_4.jpg");
+}
+.yeezy700:nth-child(1) {
+  background-image: url("./../images/yeezy700_1.jpg");
+}
+
+.yeezy700:nth-child(2) {
+    background-image: url("./../images/yeezy700_2.jpg");
+}
+
+.yeezy700:nth-child(3) {
+    background-image: url("./../images/yeezy700_3.jpg");
+}
+
+.yeezy700:nth-child(4) {
+    background-image: url("./../images/yeezy700_4.jpg");
+}
+
+.yeezy950:nth-child(1) {
+  background-image: url("./../images/yeezy950_1.jpg");
+}
+
+.yeezy950:nth-child(2) {
+    background-image: url("./../images/yeezy950_2.jpg");
+}
+
+.yeezy950:nth-child(3) {
+    background-image: url("./../images/yeezy950_3.jpg");
+}
+
+.yeezy950:nth-child(4) {
+    background-image: url("./../images/yeezy950_4.jpg");
+}
+
+.yeezy500:nth-child(1) {
+  background-image: url("./../images/yeezy500_1.jpg");
+}
+
+.yeezy500:nth-child(2) {
+    background-image: url("./../images/yeezy500_2.jpg");
+}
+
+.yeezy500:nth-child(3) {
+    background-image: url("./../images/yeezy500_3.jpg");
+}
+
+.yeezy500:nth-child(4) {
+    background-image: url("./../images/yeezy500_4.jpg");
+}
+
+.yeezypower:nth-child(1) {
+  background-image: url("./../images/yeezyPowerphase_1.jpg");
+}
+
+.yeezypower:nth-child(2) {
+    background-image: url("./../images/yeezyPowerphase_2.jpg");
+}
+
+.yeezypower:nth-child(3) {
+    background-image: url("./../images/yeezyPowerphase_3.jpg");
+}
+
+.yeezypower:nth-child(4) {
+    background-image: url("./../images/yeezyPowerphase_4.jpg");
+}
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -100%;}
+  50% {margin-left: -100%;}
+  60% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+  80% {margin-left: -300%;}
+  90% {margin-left: -300%;}
+}
+h1{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1vw;
+}
+p{
+    font-family: 'Kelly Slab', cursive;
+    font-size: 0.7vw;
+}

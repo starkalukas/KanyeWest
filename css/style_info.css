@@ -1,0 +1,286 @@
+body{
+    background-color: #F58B57;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#tlop{
+    background-image: url(./../images/tlop.jpg);
+    width: 30vw;
+    height: 20vh;
+    position: relative;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+.picture_right, .picture_left{
+    width: 15%;
+    padding: 1% 1% 1% 1%;
+    border: 2px solid black;
+    background-color: #D66A16;
+    box-shadow: 2px 2px 1px gray;
+    position: relative;
+    left: 35%;
+    margin-top: 2%;
+    height: 100%;
+}
+.picture_right{
+    float: left;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+.picture_left{
+    float: left;
+    -ms-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+.news_image{
+    height: auto;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+    font-family: Arial, sans-serif;
+}
+.navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #D6510C;
+    position: fixed;
+    font-size: 1.2vw;
+    padding: 1% 2%;
+    top: 40%;
+}
+.link, .current_site{
+    display: block;
+    color: black;
+    padding: 8% 16%;
+    text-decoration: none;
+    transition: background-color 2s ease-in 0.5s;
+    font-family: 'Slackey', cursive;
+}
+.current_site{
+    background: red;
+    color: black;
+}
+.link:hover{
+    background-color: sandybrown;
+}
+.current_site:hover{
+    background-color: forestgreen;
+}
+.left{
+    float: left;
+}
+.sticky_navigation{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: saddlebrown;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0vw;
+    width: 100%;
+    margin-top: 2%;
+}
+.link2{
+    display: block;
+    color: coral;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-family: 'Black Ops One', cursive;
+}
+.link2:hover{
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+    background-color: yellow;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 99%;
+    background-color: saddlebrown;
+    color: white;
+    text-align: center;
+    user-select: none;
+    padding: 1%;
+}
+#youtube{
+    color: red;
+    float: left;
+}
+#twitter{
+    color: dodgerblue;
+}
+#spotify{
+    color: limegreen;
+    float: right;
+}
+.wrapper {
+    width: 60%;
+    min-height: 100%;
+    margin: 0% auto;
+    background-color: #A3550A;
+    border-color: rgba(245, 222, 179, 0);
+    border-style: solid;
+    border-width: 10px;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+#wrapper1{
+    margin-top: 28%;
+}
+h1{
+    text-align: center;
+    font-family: Old London, serif;
+    font-size: 2.8vw;
+    color: #FF822A;
+}
+p{
+    font-family: 'IM Fell English', serif;
+}
+i{
+    margin-right: 8%;
+}
+
+p{
+    font-size: 1vw;
+}
+
+nav {
+    width: 100vw;
+    height: 4vw;
+    box-sizing: border-box;
+    margin: 1vw 0;
+    position: sticky;
+    top: 0;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav div, .link {
+    height: 3vw;
+    width: 13vw;
+    display: flex;
+    align-content: center;
+    box-sizing: border-box;
+}
+nav div p, .link p {
+    font-size: 1vw;
+    color: #FFAE5E;
+    text-align: center;
+    width: 100%;
+}
+a:link {
+    text-decoration: none;
+}
+@-webkit-keyframes hvr-icon-down {
+
+  0%,
+
+	50%,
+
+	100% {
+
+    -webkit-transform: translateY(0);
+
+    transform: translateY(0);
+
+  }
+
+  25%,
+
+	75% {
+
+    -webkit-transform: translateY(6px);
+
+    transform: translateY(6px);
+
+  }
+
+}
+
+@keyframes hvr-icon-down {
+
+  0%,
+
+	50%,
+
+	100% {
+
+    -webkit-transform: translateY(0);
+
+    transform: translateY(0);
+
+  }
+
+  25%,
+
+	75% {
+
+    -webkit-transform: translateY(6px);
+
+    transform: translateY(6px);
+
+  }
+
+}
+
+/* Icon Down */
+
+.icon_down {
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+
+  transform: perspective(1px) translateZ(0);
+
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+
+}
+
+.icon_down .icon {
+
+  -webkit-transform: translateZ(0);
+
+  transform: translateZ(0);
+    
+    visibility: hidden;
+
+}
+
+.icon_down:hover .icon, .icon_down:focus .icon, .icon_down:active .icon {
+
+  -webkit-animation-name: hvr-icon-down;
+
+  animation-name: hvr-icon-down;
+
+  -webkit-animation-duration: 0.75s;
+
+  animation-duration: 0.75s;
+
+  -webkit-animation-timing-function: ease-out;
+
+  animation-timing-function: ease-out;
+    
+    visibility: visible;
+
+}
+.icon{
+    padding-top: 1vw;
+    padding-left: 0.1vw;
+    color: #FFAE5E;
+}

@@ -1,0 +1,12 @@
+video {
+    position: fixed;
+    right: 270px;
+    bottom: 0;
+    min-width: 70%; 
+    min-height: 20%;
+}
+body{
+    background-color: rgb(12, 12, 12);
+    color: rgba(211,211,211,0);
+    transition: color 1s ease-in-out 13s;
+}

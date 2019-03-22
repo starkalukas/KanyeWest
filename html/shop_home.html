@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S H O P</title>
+    <meta name="description" content="THIS IS THE HOME FOR THE SHOP">
+    <meta name="author" content="Lukas Starka">
+    <link rel="stylesheet" type="text/css" href="./../css/style_shop_home.css">
+    <link rel="icon" href="./../images/icon_yzy.jpg" type="image/gif" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<!--    Skript zur Auswertung der Eingabe-->
+    <script>
+        
+        function Oeffnen(liste)
+        {
+            var index = liste.options.selectedIndex;
+            
+            if(index == 0) return false;
+            
+            var auswahl =  liste.options[index];
+            var text = auswahl.text;
+            var value = auswahl.value;
+            
+            window.open(value);
+        }
+    </script>
+</head>
+<body>
+<!--    Hintergrundvideo-->
+    <main>
+    <video autoplay loop muted>
+	<source src="./../vids/yeezy_season1_trailer.mp4">
+    Dieses Video kann nicht angezeigt werden!
+    </video>
+<!--    Auswahl der Season-->
+    <div class="auswahl">
+        <select size="1" onchange="Oeffnen(this)">
+                <option>Wählen Sie Ihre Season</option>
+                <option value="./yeezy_season3.html">Yeezy Season 3</option>
+                <option value="./yeezy_season5.html">Yeezy Season 5</option>
+                <option value="./yeezy_season6.html">Yeezy Season 6</option>
+                <option value="./yeezy_shoes.html">Yeezy Shoes</option>
+        </select>
+    </div>
+    </main>
+</body>
+</html>
